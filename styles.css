@@ -1,0 +1,125 @@
+*,html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e2b1f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    width: 300px;
+    background-color: #fff;
+    position: relative;
+    z-index: -2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header{
+    height: 100px;
+    background: #ae5fe0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.header::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color:#ae5fe0;   
+    transform: skewY(3deg);
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    transform-origin: right ;
+    z-index: -1;
+}
+
+.hero-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: -90px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+h1:before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 1px;
+    bottom: 0;
+    left: 40%;
+    border-bottom: 4px solid black;
+}
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .60em;
+    margin-bottom: 20px;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.main{
+    margin-top: 20px;
+    padding: 0 10px;
+    
+}
+
+.main i{
+    color: #6642f5;
+}
+
+footer{
+    margin-top: auto;
+    position: relative;
+    background-color:#6642f5;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color:#6642f5;
+    transform: skewY(3deg);
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    transform-origin: right ;
+    z-index: -1;
+}
+
+footer i {
+    color: #fff;
+}
